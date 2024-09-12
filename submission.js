@@ -26,6 +26,7 @@ function checkDigitsInName(name) {
   for (const letter of name) {
     if (!isNaN(letter)) {
       hasDigit = true;
+      break;
     } else {
       hasDigit = false;
     }

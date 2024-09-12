@@ -6,6 +6,7 @@ function checkDigitsInName(name) {
   for (const letter of name) {
     if (!isNaN(letter)) {
       hasDigit = true;
+      break;
     } else {
       hasDigit = false;
     }
@@ -14,6 +15,7 @@ function checkDigitsInName(name) {
 }
 
 console.log(checkDigitsInName("snigdha12"));
+console.log(checkDigitsInName("n9ayeem"));
 console.log(checkDigitsInName("Suman"));
 console.log(checkDigitsInName("Name2024"));
 console.log(checkDigitsInName("!@#"));
