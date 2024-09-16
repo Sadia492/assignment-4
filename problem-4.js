@@ -6,9 +6,9 @@ function calculateFinalScore(obj) {
   if (
     typeof obj.name !== "string" ||
     typeof obj.testScore !== "number" ||
-    obj.testScore >= 50 ||
+    obj.testScore > 50 ||
     typeof obj.schoolGrade !== "number" ||
-    obj.schoolGrade >= 30 ||
+    obj.schoolGrade > 30 ||
     typeof obj.isFFamily !== "boolean"
   ) {
     return "Invalid Input";
@@ -24,8 +24,8 @@ function calculateFinalScore(obj) {
 console.log(
   calculateFinalScore({
     name: "Rajib",
-    testScore: 45,
-    schoolGrade: 25,
+    testScore: 50,
+    schoolGrade: 30,
     isFFamily: true,
   })
 );
